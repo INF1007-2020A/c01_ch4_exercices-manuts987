@@ -3,29 +3,24 @@
 
 
 def is_even_len(string: str) -> bool:
-    if len(string)%2 == 0:
-        print('le nombre de charactere est paire')
-    else:
-        print('le nombre de charactere est impaire')
-    return False
+    return len(string)%2 == 0
 
 
 def remove_third_char(string: str) -> str:
-    string = string[0:2] + string[3:]
-    return string
+    return string[0:2] + string[3:]
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    string = string.replace(old_char , new_char)
-    return string
+    return string.replace(old_char , new_char)
 
 
 def get_nb_char(string: str, char: str) -> int:
-    return count
+    return string.count(char)
+
 
 
 def get_nb_words(sentence: str) -> int:
-    return 0
+    return len(sentence.split())
 
 
 def main() -> None:
